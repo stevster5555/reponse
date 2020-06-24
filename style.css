@@ -68,16 +68,14 @@ li:hover {
 }
 
 
-@media screen and (min-device-width: 414px) 
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
   and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {  
+  and (-webkit-min-device-pixel-ratio: 3) { 
     .nav-bar {
         display:inline-block;
-        width:80%;
-
-font-size: 30px;
-
+        width:100%;
         
     }
 
@@ -85,7 +83,33 @@ font-size: 30px;
         
         text-align: center;
     }
+
+    .item4
+    {
+    margin:0 ;
+    }
 }
+
+
+@media only screen and (max-width: 600px) 
+{
+.nav-bar {
+        display:inline-block;
+        width:100%;
+        
+    }
+
+    li{
+        
+        text-align: center;
+    }
+
+    .item4
+    {
+    margin:0 ;
+    }
+}
+
 
 .grid {
     display: grid;
@@ -97,7 +121,7 @@ font-size: 30px;
 
 
 .gridItem {
-    padding: 100px;
+    padding: 130px;
     margin: 20px;
     background-color: #777;
 }
@@ -109,6 +133,12 @@ font-size: 30px;
 
 @media screen and (max-width: 700px) {
   
+}
+
+.yellow {
+    text-align:center;
+    text-transform: uppercase;
+    height: 100px;
 }
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 /*@media screen and (max-width: 700px) {
