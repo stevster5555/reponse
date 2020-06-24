@@ -66,7 +66,30 @@ li:hover {
 
     height: 50vh; 
 }
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .nav-bar {
+        display:inline-block;
+        width:100%;
+        
+    }
+
+    li{
+        
+        text-align: center;
+    }
+
+    .item4
+    {
+    margin:0 ;
+    }
+
+  }
 
 /* Portrait and Landscape */
 @media only screen 
